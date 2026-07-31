@@ -16,19 +16,19 @@ const team = [
   },
   {
     name: "Monica Xu",
-    role: "Researcher",
+    role: "Research Lead",
     image: "/assets/team/monica-xu.jpg",
-    bio: "Monica brings a research-driven perspective grounded in qualitative and quantitative methods. She led stakeholder interviews, workflow research, usability testing, and pilot data analysis to understand how authors, reviewers, coordinators, and adopters experience the OER review process. She translated these findings into user personas, design recommendations, and product directions, including the AI assistant and public review Hub.",
+    bio: "Monica brings expertise in user research, usability testing, and data-informed product strategy. She led stakeholder interviews, workflow studies, prototype evaluations, and pilot data analysis across the OER review process, translating findings into personas, design recommendations, and product requirements. She contributed to the design and development of the AI assistant and reviewer pre-training course, while leading the development of the public review Hub as part of the platform’s sustainability strategy.",
   },
   {
     name: "Sara Liang",
-    role: "Designer",
+    role: "Design Lead",
     image: "/assets/team/sara-liang.jpg",
     bio: "Sara brings expertise in interaction design, frontend development, and AI-assisted design-to-code workflows. She led design and frontend implementation across the platform's dashboards, review console, and revision workflow, and built the design system that powers them in Next.js and Tailwind. She also developed a discovery-then-build workflow using AI coding tools that let the team move from design decisions into production faster, and led the visual direction of the team's report and other deliverables.",
   },
   {
     name: "Allison Dayton",
-    role: "Developer",
+    role: "Development Lead",
     image: "/assets/team/allison-dayton.jpg",
     bio: "Allison brings a background in software engineering, data systems, and full-stack development. She led the technical implementation of the platform, including authentication, database architecture, content ingestion, annotation storage, dashboards, and review workflows. She also developed solutions for supporting PDFs, OpenStax, Pressbooks, and OLI Torus, including a browser extension for reviewing secured and interactive content.",
   },

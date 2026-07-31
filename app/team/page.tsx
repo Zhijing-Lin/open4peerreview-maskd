@@ -6,7 +6,7 @@ const team = [
     name: "Dimple Lin",
     role: "Project Manager",
     image: "/assets/team/dimple-lin.jpg",
-    bio: "Dimple brings experience in project management, instructional design, and learning engineering. She led project planning, timeline management, client communication, and cross-functional coordination, translating stakeholder needs into clear priorities and deliverables. She also led the design of this project website and the development of the reviewer pr-training course, applying learning science to prepare reviewers for evidence-based evaluation and actionable feedback.",
+    bio: "Dimple brings experience in project management, instructional design, and learning engineering. She led project planning, timeline management, client communication, and cross-functional coordination, translating stakeholder needs into clear priorities and deliverables. She also led the design of this project website and the development of the reviewer pre-training course, applying learning science to prepare reviewers for evidence-based evaluation and actionable feedback.",
   },
   {
     name: "Kang Tan",

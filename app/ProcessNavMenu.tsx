@@ -54,14 +54,27 @@ export function ProcessNavMenu({ active }: { active: boolean }) {
       onMouseEnter={openMenu}
       onMouseLeave={scheduleClose}
     >
+      <Link
+        aria-current={active ? "page" : undefined}
+        className={`nav-process-link${active ? " active" : ""}`}
+        href="/process"
+        onClick={() => {
+          setOpen(false);
+          if (window.location.pathname === "/process") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }}
+      >
+        Process
+      </Link>
       <button
         aria-expanded={open}
         aria-haspopup="menu"
-        className={`nav-process-trigger${active ? " active" : ""}`}
+        aria-label={open ? "Close Process section menu" : "Open Process section menu"}
+        className="nav-process-toggle"
         onClick={() => setOpen((current) => !current)}
         type="button"
       >
-        Process
         <span aria-hidden="true">⌄</span>
       </button>
 

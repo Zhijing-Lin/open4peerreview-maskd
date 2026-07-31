@@ -110,8 +110,12 @@ nav > a:not(.nav-platform-cta).active {
 }
 .nav-process-menu {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 20px;
   align-items: stretch;
+  border-bottom: 3px solid transparent;
+  color: var(--ink);
+  transition: border-color .2s ease, color .2s ease;
 }
 .nav-process-menu.open::after {
   position: absolute;
@@ -123,39 +127,48 @@ nav > a:not(.nav-platform-cta).active {
   content: "";
   transform: translateX(-50%);
 }
-.nav-process-trigger {
-  display: inline-flex;
+.nav-process-link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: 100%;
+  justify-content: flex-end;
   padding: 29px 0 25px;
+  border: 0 !important;
+  color: inherit;
+}
+.nav-process-toggle {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  width: 22px;
+  height: 28px;
+  padding: 0 0 1px;
   border: 0;
-  border-bottom: 3px solid transparent;
+  border-radius: 999px;
   background: transparent;
   color: inherit;
   font: inherit;
   cursor: pointer;
 }
-.nav-process-trigger > span {
+.nav-process-toggle > span {
   color: currentColor;
   font-size: 13px;
   line-height: 1;
   transition: color .2s ease, transform .2s ease;
 }
-.nav-process-trigger:hover,
-.nav-process-trigger:focus-visible,
-.nav-process-trigger.active,
-.nav-process-menu.open .nav-process-trigger {
+.nav-process-menu:hover,
+.nav-process-menu:focus-within,
+.nav-process-menu:has(.nav-process-link.active),
+.nav-process-menu.open {
   border-bottom-color: var(--orange);
   color: var(--orange);
 }
-.nav-process-menu.open .nav-process-trigger > span {
+.nav-process-menu.open .nav-process-toggle > span {
   transform: rotate(180deg);
 }
-.nav-process-trigger:focus-visible {
+.nav-process-link:focus-visible,
+.nav-process-toggle:focus-visible {
   outline: 2px solid rgba(238,124,71,.38);
-  outline-offset: -5px;
+  outline-offset: 1px;
 }
 .nav-process-dropdown {
   position: absolute;
@@ -164,12 +177,12 @@ nav > a:not(.nav-platform-cta).active {
   left: 50%;
   width: 242px;
   padding: 12px;
-  border: 1px solid #efc4af;
-  border-radius: 17px;
-  background: linear-gradient(180deg, #fff9f5 0, #ffffff 38%);
+  border: 1px solid #c9e5f3;
+  border-radius: 15px;
+  background: #ffffff;
   box-shadow:
-    0 22px 52px rgba(23,55,81,.16),
-    0 5px 14px rgba(238,124,71,.08);
+    0 22px 52px rgba(23,55,81,.14),
+    0 5px 14px rgba(36,126,176,.07);
   transform: translateX(-50%);
   animation: process-menu-in .18s ease both;
 }
@@ -183,9 +196,9 @@ nav > a:not(.nav-platform-cta).active {
   left: calc(50% - 7px);
   width: 12px;
   height: 12px;
-  border-top: 1px solid #efc4af;
-  border-left: 1px solid #efc4af;
-  background: #fff9f5;
+  border-top: 1px solid #c9e5f3;
+  border-left: 1px solid #c9e5f3;
+  background: #ffffff;
   content: "";
   transform: rotate(45deg);
 }
@@ -205,9 +218,9 @@ nav .nav-process-dropdown a:hover,
 nav .nav-process-dropdown a:focus-visible {
   border: 0;
   outline: 0;
-  background: #fff1e9;
-  color: var(--orange);
-  box-shadow: inset 3px 0 0 var(--orange);
+  background: #eef8fd;
+  color: var(--blue);
+  box-shadow: inset 3px 0 0 var(--blue);
   transform: translateX(3px);
 }
 .nav-process-dropdown small {
@@ -215,19 +228,19 @@ nav .nav-process-dropdown a:focus-visible {
   place-items: center;
   width: 25px;
   height: 25px;
-  border: 1px solid var(--sky-3);
+  border: 1px solid #f3b18f;
   border-radius: 50%;
-  color: var(--blue);
-  background: var(--sky);
+  color: var(--orange);
+  background: #fff5ef;
   font-size: 10px;
   font-weight: 850;
   transition: color .18s ease, background .18s ease, border-color .18s ease;
 }
 nav .nav-process-dropdown a:hover small,
 nav .nav-process-dropdown a:focus-visible small {
-  border-color: #f7b190;
+  border-color: var(--blue);
   color: white;
-  background: var(--orange);
+  background: var(--blue);
 }
 .nav-process-dropdown span {
   font-weight: 750;
@@ -3457,7 +3470,8 @@ p { color: var(--muted); font-size: var(--type-body); line-height: 1.64; }
     width: 210px;
     transform: none;
   }
-  .nav-process-trigger { padding: 3px 0 6px; }
+  .nav-process-link { padding: 3px 0 6px; }
+  .nav-process-toggle { min-height: 28px; padding: 0; }
   .nav-process-dropdown {
     top: calc(100% + 7px);
     right: 0;

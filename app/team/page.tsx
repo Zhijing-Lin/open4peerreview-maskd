@@ -6,7 +6,7 @@ const team = [
     name: "Dimple Lin",
     role: "Project Manager",
     image: "/assets/team/dimple-lin.jpg",
-    bio: "Dimple brings experience in project management, instructional design, and learning engineering. She led project planning, timeline management, client communication, and cross-functional coordination, translating stakeholder needs into clear priorities and deliverables. She also led the design of this project website and the development of the reviewer pretraining course, applying learning science to prepare reviewers for evidence-based evaluation and actionable feedback.",
+    bio: "Dimple brings experience in project management, instructional design, and learning engineering. She led project planning, timeline management, client communication, and cross-functional coordination, translating stakeholder needs into clear priorities and deliverables. She also led the design of this project website and the development of the reviewer pr-training course, applying learning science to prepare reviewers for evidence-based evaluation and actionable feedback.",
   },
   {
     name: "Kang Tan",
@@ -18,7 +18,7 @@ const team = [
     name: "Monica Xu",
     role: "Research Lead",
     image: "/assets/team/monica-xu.jpg",
-    bio: "Monica brings expertise in user research, usability testing, and data-informed product strategy. She led stakeholder interviews, workflow studies, prototype evaluations, and pilot data analysis across the OER review process, translating findings into personas, design recommendations, and product requirements. She contributed to the design and development of the AI assistant and reviewer pre-training course, while leading the development of the public review Hub as part of the platform’s sustainability strategy.",
+    bio: "Monica brings expertise in user research, usability testing, and data-informed product strategy. She led stakeholder interviews, workflow studies, prototype evaluations, and pilot data analysis across the OER review process, translating findings into personas, design recommendations, and product requirements. She contributed to the design and development of the AI assistant and reviewer pre-training course, while leading the development of Public Review Hub as part of the platform’s sustainability strategy.",
   },
   {
     name: "Sara Liang",
